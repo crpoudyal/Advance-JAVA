@@ -14,6 +14,8 @@ import javax.swing.JFrame;
 public class JFrameEx {
 
     public static void main(String[] args) {
+        
+//        Creating using JFrame object
 
         JFrame frame = new JFrame();
         frame.setTitle("Advance Java Programming");

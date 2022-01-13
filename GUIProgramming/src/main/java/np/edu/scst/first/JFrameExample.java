@@ -3,18 +3,14 @@ package np.edu.scst.first;
 import java.awt.*;
 import javax.swing.*;
 
-/**
- *
- * @author crpoudyal
- */
 public class JFrameExample extends JFrame {
 
     public JFrameExample() {
 
         JPanel jPanel = new JPanel();
-        
+
         jPanel.setBackground(Color.red);
-        
+
         add(jPanel);
 
         setVisible(true);

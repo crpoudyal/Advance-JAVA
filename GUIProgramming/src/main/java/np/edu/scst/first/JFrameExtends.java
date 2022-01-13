@@ -2,10 +2,6 @@ package np.edu.scst.first;
 
 import javax.swing.JFrame;
 
-/**
- *
- * @author crpoudyal
- */
 public class JFrameExtends extends JFrame {
 
     public JFrameExtends() {
@@ -13,9 +9,9 @@ public class JFrameExtends extends JFrame {
 
 //        setDefaultCloseOperation(3);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
-        setSize(200,200);
-        
+
+        setSize(200, 200);
+
         setTitle("JFrameExtends Example");
 
     }

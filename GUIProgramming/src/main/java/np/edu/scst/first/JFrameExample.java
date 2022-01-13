@@ -1,6 +1,7 @@
 package np.edu.scst.first;
 
-import javax.swing.JFrame;
+import java.awt.*;
+import javax.swing.*;
 
 /**
  *
@@ -9,9 +10,16 @@ import javax.swing.JFrame;
 public class JFrameExample extends JFrame {
 
     public JFrameExample() {
+
+        JPanel jPanel = new JPanel();
+        
+        jPanel.setBackground(Color.red);
+        
+        add(jPanel);
+
         setVisible(true);
 
-        setSize(200, 300); // (width,height)
+        setSize(200, 200); // (width,height)
 
         setTitle("JFrame Example");
 

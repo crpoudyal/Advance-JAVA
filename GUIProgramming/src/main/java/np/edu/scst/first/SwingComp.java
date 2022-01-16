@@ -42,6 +42,21 @@ public class SwingComp extends JFrame {
         JLabel lbl4 = new JLabel("Countries");
         add(lbl4);
 
+        String[] countries = {"Nepal", "India", "Bangladesh", "Srilanka", "Pakistan"};
+        JComboBox jbox = new JComboBox(countries);
+
+        add(jbox);
+
+        JList jlist = new JList(countries);
+        add(jlist);
+
+        String[] header = {"Nmae", "Class", "Age"};
+        String[][] body = {{"Govinda", "3", "7"}, {"Manoj", "12", "17"}};
+
+        JTable jtbl = new JTable(body, header);
+        JScrollPane jscroll = new JScrollPane(jtbl);
+        add(jscroll);
+
         setLayout(new FlowLayout());
 
         setVisible(true);

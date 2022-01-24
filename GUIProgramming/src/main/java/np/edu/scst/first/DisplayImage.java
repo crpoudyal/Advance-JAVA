@@ -1,15 +1,20 @@
 package np.edu.scst.first;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class DisplayImage extends JFrame {
 
     DisplayImage() {
+        JPanel jpanel = new JPanel();
 
         ImageIcon img = new ImageIcon("html5.png");
         JLabel lbl = new JLabel(img);
-        lbl.setSize(50, 50);
-        add(lbl);
+        jpanel.add(lbl);
+
+        lbl.setSize(400, 400);
+
+        add(jpanel);
 
         setVisible(true);
         setTitle("Displaying Image");

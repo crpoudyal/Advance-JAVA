@@ -12,6 +12,7 @@ public class Menu extends JFrame {
         JMenuItem docx = new JMenuItem("Docx");
 
         JMenu file = new JMenu("File");
+        JMenu edit = new JMenu("Edit");
         JMenu view = new JMenu("View");
         JMenu saveAs = new JMenu("Save As");
 
@@ -25,7 +26,9 @@ public class Menu extends JFrame {
 
         jMenuBar.add(file);
         jMenuBar.add(view);
+        jMenuBar.add(edit);
         add(jMenuBar);
+
         setLayout(new FlowLayout());
         setVisible(true);
         setSize(800, 800);

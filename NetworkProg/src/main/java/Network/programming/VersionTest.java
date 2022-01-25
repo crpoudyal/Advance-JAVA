@@ -19,7 +19,6 @@ public class VersionTest {
     }
 
     public static void main(String[] args) throws UnknownHostException {
-
         int res = getVersion(InetAddress.getByName("2400:1a00:b050:bd50:e5b2:5de:6d75:86cd"));
         System.out.println(res);
     }

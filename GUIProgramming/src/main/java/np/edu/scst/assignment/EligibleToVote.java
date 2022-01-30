@@ -19,9 +19,9 @@ public class EligibleToVote extends JFrame {
                 String tx = txt.getText().toString();
                 int age = Integer.parseInt(tx);
                 if (age >= 18) {
-                    res.setText("Your age is " + age + "You can vote in comming elections.");
+                    res.setText("Your age is " + age + " You can vote in comming elections.");
                 } else {
-                    res.setText("Your age is " + age + "You can't vote in comming elections.Your age must be greater and equals to 18");
+                    res.setText("Your age is " + age + " You can't vote in comming elections.Your age must be greater and equals to 18");
                 }
 
             }

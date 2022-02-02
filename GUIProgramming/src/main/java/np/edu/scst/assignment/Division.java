@@ -29,7 +29,7 @@ public class Division extends JFrame {
                     int div = a / b;
                     res.setText(div + "");
                 } catch (Exception ex) {
-                    res.setText("Exception : " + ex);
+                    res.setText("Exception :  " + ex);
                 }
             }
         });

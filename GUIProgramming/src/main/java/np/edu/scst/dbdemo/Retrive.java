@@ -2,10 +2,11 @@ package np.edu.scst.dbdemo;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Insert {
+public class Retrive {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
@@ -14,11 +15,23 @@ public class Insert {
         String password = "";
         Connection con = DriverManager.getConnection(url, hostName, password);
         Statement st = con.createStatement();
-        String sql = "INSERT INTO students(name,age,program,subject) VALUES('Hari',23,'bca','java')";
+        String sql = "SELECT * FROM students";
         System.out.println("Query " + sql);
+        ResultSet rs = st.executeQuery(sql);
+        System.out.println("id\tname\tage\tprogram\tsubject");
+
+        while (rs.next()) {
+            System.out.print(rs.getInt("id") + "\t");
+            System.out.print(rs.getString("name") + "\t");
+            System.out.print(rs.getInt("age") + "\t");
+            System.out.print(rs.getString("program") + "\t");
+            System.out.println(rs.getString("subject") + "\t");
+
+        }
+
         st.execute(sql);
-        System.out.println("Inserted successfully");
         st.close();
         con.close();
     }
+
 }

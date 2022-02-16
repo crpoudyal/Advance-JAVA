@@ -1,13 +1,13 @@
-package np.edu.scst.eventhandling;
+package np.edu.scst.lab2;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.FlowLayout;
 import java.awt.event.MouseAdapter;
+import javax.swing.*;
 import java.awt.event.MouseEvent;
 
-public class MouseEvnt extends JFrame {
+public class MouseEvntDemo extends JFrame {
 
-    MouseEvnt() {
+    MouseEvntDemo() {
         JButton jbtn = new JButton("Click");
         JLabel lbl = new JLabel();
         jbtn.addMouseListener(new MouseAdapter() {
@@ -27,6 +27,7 @@ public class MouseEvnt extends JFrame {
     }
 
     public static void main(String[] args) {
-        new MouseEvnt();
+        new MouseEvntDemo();
     }
+
 }

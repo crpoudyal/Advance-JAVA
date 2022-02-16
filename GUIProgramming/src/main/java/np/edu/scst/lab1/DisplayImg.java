@@ -1,3 +1,4 @@
+// 3.WAP to display the image of the logo of your college inside a swing application.
 package np.edu.scst.lab1;
 
 import javax.swing.*;

@@ -1,3 +1,4 @@
+// 1.Write a Program (WAP) to display a star shape inside of a swing application.
 package np.edu.scst.lab1;
 
 import javax.swing.*;

@@ -13,10 +13,8 @@ public class HelloWorld extends JFrame {
 
         jpanel.add(lbl);
         add(jpanel);
-
         setVisible(true);
         jpanel.setBackground(Color.CYAN);
-        setLayout(new FlowLayout());
         setTitle("Hello world");
         setSize(300, 300);
         setDefaultCloseOperation(3);

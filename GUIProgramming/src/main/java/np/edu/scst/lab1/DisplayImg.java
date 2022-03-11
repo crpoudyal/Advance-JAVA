@@ -17,7 +17,7 @@ public class DisplayImg extends JFrame {
 
         setVisible(true);
         setTitle("Displaying Image");
-        setSize(500, 500);
+        setSize(500, 300);
         setDefaultCloseOperation(3);
     }
 
